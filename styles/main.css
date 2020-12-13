@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    display: block;
+    background-color: #fff;
+    background-color: rgb(255, 252, 247);
+}
+body{
+color: #a2a2a2;
+font-family: "Source Sans Pro", Helvetica, sans-serif;
+font-size: 16pt;
+font-weight: 400;
+line-height: 1.75em;
+}
+#header {
+    background: rgb(189, 24, 24);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #0f1042; /* #1f1815;*/
+    background: linear-gradient(45deg,  #0f1042 0%,  #151655 50%,  #151946 100%);
+    background-attachment: scroll, scroll;
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: 150%, 150%;
+    color:  #ccc;    
+    height: 100%;
+    left: 0;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 25%;
+    min-width: 19em;
+    z-index: 1;
+}
+#header .header_content {
+    margin-top: 7em;
+    margin-right: 4em;
+    display: flex;
+    flex-direction: column;
+}
+#header img {
+    width:14em;
+    height:14em;
+    border-radius: 50%;
+    margin-right: -1em;
+    margin-bottom: 2em;
+}
+#header .personal_info {
+    display: flex;
+    flex-direction: column;
+}
+#header h1{
+    margin-bottom: 10px;
+}
+#header h4 {
+    font-weight: 100;
+    margin-bottom: -10px;
+}
+#main {
+    margin-left: 25%;
+    max-width: 90%;
+    padding: 5em 0em 4em 4em;
+    width: calc(100% - 25%);
+}
+
+/* Introduction */
+#introduction {
+    padding:2em;
+}
+#introduction h1 {
+    color: #787878;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 1em;   
+}
+#introduction p {
+    font-size: 100%;
+    border-bottom: 1px solid;
+    padding-bottom: 2em;
+    margin-right: 1em;
+    max-width: 1000px;
+}
+
+/* Recent Work */
+#recent-work {
+    padding: 2em;
+}
+#recent-work h2 {
+    margin-bottom: 1em;
+}
+#work-container {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    /* border: 5px solid rgb(189, 7, 7); */
+    gap: 5% 8%;
+    max-width: 1000px;
+}
+.work{
+    /* border: 1px solid rgb(255, 230, 233); */
+}
+.work img{
+    border-radius: 1em;
+    width: 100%;
+}
+.work h3 {
+    margin-bottom: 1px;
+}
+.work img:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 255, 128, 0.5);
+    opacity:0.5;
+    z-index: 0;
+}
+
+/* S E C O N D A R Y    W E B P A G E - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+.title {
+    /* background-color: #0f1042; */
+    background-color: #ccc;
+    /* background: linear-gradient(45deg,  #0f1042 0%,  #191a5c 50%,  #151946 100%); */
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 2em;
+    color:#0f1042;
+    z-index: 1; 
+}
+
+#specialized-work {
+    padding: 8em 0 0 0;
+    display: flex;
+    justify-content: center;
+}   
+#work-container.second {
+    margin: 0 10% 0 10%;
+    width: calc(100% - 20%);
+    max-width: 1250px;
+}
+
+
+/* T H I R D    W E B P A G E - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+@media screen and (max-width: 1425px) {
+    body{
+        font-size: 14pt;
+        }
+    #header {
+        min-width: 15em;
+    }
+    #header img {
+        width:11em;
+        height:11em;
+    }
+    #header h4 {
+        margin-bottom: -8px;
+    }
+
+}
+
+
+@media screen and (max-width: 1075px) {
+    body{
+        font-size: 12pt;
+        }
+    #header img {
+        width:10em;
+        height:10em;
+    }
+    #header h4 {
+        margin-bottom: -6px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 8pt;
+        }
+    #header {
+        height:20%;
+        max-height: 14em;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+        position: fixed;
+    }
+    #header  .header_content{
+        padding: 0px;
+        margin: 0px;
+        flex-direction: row;
+    }
+    #header img {
+        width:9em;
+        height:9em;
+        border-radius: 50%;
+        margin: 0em 3em 0em 0em;
+    }
+    #header .personal_info{
+        border-left: 1px solid;
+        align-items: left;
+        justify-content: center;
+        padding-left: 3em;
+    }
+    #header h4 {
+        margin-bottom: -4px;
+    }
+    #main {
+        margin: 15em 0 0 0;
+        max-width: 100%;
+        padding: 0px;
+        width: 100%;
+    }
+   
+}
