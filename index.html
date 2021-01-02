@@ -47,84 +47,25 @@
             <section id="recent-work">
                 <h2>Recent work</h2>
                 <div id="work-container">
-                    <!-- 3D DESIGN -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-06.jpg"/>
-                            <a class="image_overlay custom_noise" href="pages/second/3dd.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>3D design</h3>
-                            <p>Design for manufacturing, workflow automation...</p>
-                        </div>
-                    </article>
-                    <!-- Digital manufacturing -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-03.jpg"/>
-                            <a class="image_overlay custom_noise" href="pages/second/3dp.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>Digital manufacturing</h3>
-                            <p>Mainly 3d printing projects</p>
-                        </div>
-                    </article>
-                    <!-- PROGRAMMING -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-09.jpg"/>
-                            <a class="image_overlay custom_noise" href="pages/second/programming.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>Programming</h3>
-                            <p>Main languages Java, Python, C</p>
-                        </div>
-                    </article>
-                    <!-- GAME DEVELOPMENT -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-10.jpg"/>
-                            <a class="image_overlay custom_noise" href="secondary.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>Game development</h3>
-                            <p>Arcade games using Java or Python</p>
-                        </div>
-                    </article>
-                    <!-- ELECTRONICS -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-04.jpg"/>
-                            <a class="image_overlay custom_noise" href="secondary.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>Electronics</h3>
-                            <p>Arduino projects</p>
-                        </div>
-                    </article>
-                    <!-- IoT -->
-                    <article class="work">
-                        <div class="image_container">
-                            <img src="images/works/work-07.jpg"/>
-                            <a class="image_overlay custom_noise" href="pages/second/IoT.html">
-                                <h5>    </h5>
-                            </a>
-                        </div>
-                        <div class="image_description">
-                            <h3>IoT</h3>
-                            <p>Custom projects made from Arduino and Raspberry Pi</p>
-                        </div>
-                    </article>  
+    
+                    <!-- T E M P L A T E  -->
+                    <template id="card-template">
+                        <article class="work">
+                            <div class="image_container">
+                                <img>
+                                <a class="image_overlay custom_noise">
+                                    <h5>    </h5>
+                                </a>
+                            </div>
+                            <div class="image_description">
+                                <h3> </h3>
+                                <p> </p>
+                            </div>
+                        </article>
+                    </template>
+
+                </div>
+            </section>
 
 
             <!--  F O O T E R  -->
@@ -151,6 +92,8 @@
             <script src="js/hide_main.js"></script>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+
+            <script src="js/templates.js"></script>
 
         
     </body>
